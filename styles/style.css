@@ -7,6 +7,25 @@
     font-style: normal;
   }
 
+/* shared styles */
+ .semibold-font{
+    font-weight: 500;
+}
+ .color-1{
+    color: #FEA301;
+ }
+  .color-2{
+    color: #01ACFD;
+  }
+
+  .color-3{
+    color: #05D4DF;
+  }
+
+  .color-4{
+    color: #5D58EF;
+  }
+
   /* navbar styles */
      .display-flex{
         display: flex;
@@ -42,21 +61,7 @@
         font-weight: bold;
         color: #FEA301;
     }
-
-    .item-2{
-        font-weight:500 ;
-        color: #01ACFD;
-    }
-
-    .item-3{
-        font-weight: 500;
-        color: #05D4DF;
-    }
-
-    .item-4{
-        font-weight: 500;
-        color: #5D58EF;
-    }
+  
     .nav-link{
         text-decoration: none;
     }
@@ -79,6 +84,57 @@
         align-items: center;
         justify-content: flex-start;
     }
+/* banner styles */
+      .banner-container{
+         display: flex;
+         margin: 10px 140px 60px 140px;
+         gap: 50px;
+         align-items: center;
+         justify-content: center;
+         flex-direction: row;
+      }
+   
+      .banner{
+        flex: 1;
+        text-align: left;
+    }
+
+      .banner-title{
+        font-size: 56px;
+        font-weight: bold;
+        margin: 120px 50px 24px 0px;
+      }
+
+      .banner-description{
+        font-size: 20px;
+        margin: 24px 0px;
+      }
+
+      .banner-btn{
+        font-size: 20px;
+        font-weight: bold;
+        background-color: #111111;
+        border-radius: 12px;
+        color: white;
+        padding: 10px 47px;
+        border: none;
+      }
+
+   .banner-img{
+    width: 470px;
+    height: 575px;
+    flex: 1;
+    text-align: right;
+    }
+
+    .banner-img image {
+        height: auto;
+        max-width: 100%;
+       display: block;
+    }
+  
+   
+
 
 
   /* Standard Curriculum styles */
@@ -107,7 +163,17 @@
      .logo{       
         flex: 0;
      }
-    
+
+    .banner-container{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .banner-img{
+        text-align: center;
+    }
+    .banner{
+        text-align: center;
+    }
  }
 
 
