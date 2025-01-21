@@ -31,6 +31,9 @@
     color: #5D58EF;
   }
 
+   .color-5{
+    color: #a949fd;
+   }
   /* navbar styles */
      .display-flex{
         display: flex;
@@ -150,19 +153,147 @@
 
 
   /* Standard Curriculum styles */
+   .curriculam-container{
+    background-image: url('../assets/bg.png');
+    width: 1440px;
+    height: 800px;
+   }
 
+  .curriculam-boxes{
+    display: flex;
+    justify-content: space-between;
+    margin: 80px 140px;
+    gap: 20px;
+    text-align: center;
+    width: 1160px;
+    height: 480px;
+    box-shadow: 0, 0, 28;
+  }
 
+  .curriculam-title{
+   font-size: 46px;
+   font-weight: bold;
+   text-align: center;
+   margin: 30px 70px;
+  }
 
+    .curriculam-text{
+      margin: 30px 60px;
+      font-size: 16px;
+      font-weight: 600;
+    }
+
+    .curriculam-btn{
+      margin: 30px 130px 50px 130px;
+      font-size: 16px;
+      font-weight: bold;
+        }
+
+   .curriculam-box-1{
+    width: 370px;
+    height: 470px;
+      background: linear-gradient(to bottom, #DEF5FF, #FFFFFF);
+      border-radius: 20px;
+      border: 0.5px solid rgb(237, 236, 236);
+    }
+
+   .curriculam-box-2{
+    width: 370px;
+    height: 470px;
+    background: linear-gradient(to bottom, #FFF4DC, #FFFFFF);
+    border-radius: 20px;
+    border: 0.5px solid rgb(237, 236, 236);
+   }
+
+   .curriculam-box-3{
+    width: 370px;
+    height: 470px;
+    background: linear-gradient(to bottom, #F2E8FF, #FFFFFF);
+    border-radius: 20px;
+    border: 0.5px solid rgb(237, 236, 236);
+    box-shadow: rgba(0, 0, 0, 0.05);
+    box-shadow:0, 2px, 2px, rgba(0, 0, 0, 0.05);
+   }
+
+   .curriculam-img{
+    width: 125px;
+    height: 125px;
+    margin: 50px 80px;
+    padding: 5px;
+   }
+
+   .icon-text{
+    font-size: 24px;
+    color: white;
+   }
+
+   .icon-btn{
+    width: 60px;
+    height: 60px;
+    background-color: orange;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+   }
+
+   .icon-arrow{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    position: relative;
+    margin-top: 20px;
+    width: 100%;
+    gap: 10px;
+   }
   /* Our Stories styles */
+   /* .stories-images{
+    display: flex;
+    justify-content: center;
+   }
 
+.story-pictures{
+  display: flex;
+  justify-content: space-between;
+} */
 
+.stories{
+  width: 100%;
+  margin: 0 auto;
+  padding: 2px;
+}
 
+.story-title{
+  font-size:46px ;
+  font-weight:bold ;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.stories-images{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.story-img{
+  text-align: left;
+  border-radius:16px ;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.main-img{
+  /* width: 100%; */
+  /* height: auto; */
+  border-radius: 10px;
+}
   /* footer styles */
 
 
 
   /*mobile responsive  */
- @media screen and (max-width: 576px) {
+ @media screen and (max-width:576px) {
      .menu, .nav-title, .nav-btn{
         display: none;
      }
@@ -209,10 +340,53 @@
         text-align: center;
         padding-left: 30px;
     }
+
+    
+   /* standard curriculam */
+   .curriculam-boxes {
+    flex-direction: column;
+    align-items: center;
+    /* margin: 20px 0; */
+    /* width: 100%; */
+    /* gap: 20px; */
+  }
+
+  .curriculam-box-1,
+  .curriculam-box-2,
+  .curriculam-box-3 {
+    /* width: auto;
+    height: auto; */
+    padding: 20px;
+  }
+
+  .curriculam-text{
+    margin: 10px 0;
+    font-size: 14px;
+  }
+
+  .curriculam-btn{
+    margin: 10px auto;
+    font-size: 14px;
+  }
+
+  .curriculam-img{
+    width: 100px;
+    height: 100px;
+    margin: 20px auto;
+  }
+
+  .curriculam-title{
+    font-size: 32px;
+    margin: 20px 0;
+  }
+
+  .icon-arrow{
+    display: none;
+  }
  }
+ 
 
-
-
+  
 
 
   /* medium responsive */
