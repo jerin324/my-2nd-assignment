@@ -262,6 +262,7 @@
   width: 100%;
   margin: 0 auto;
   padding: 2px;
+ background: linear-gradient(to top, #FEA301, #FEC257, #FFFFFF);
 }
 
 .story-title{
@@ -270,7 +271,10 @@
   text-align: center;
   margin-bottom: 20px;
 }
-
+.story-pictures{
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+}
 .stories-images{
   display: grid;
   grid-template-columns: 2fr 1fr;
@@ -284,8 +288,8 @@
 }
 
 .main-img{
-  /* width: 100%; */
-  /* height: auto; */
+  width:auto;
+  height: auto;
   border-radius: 10px;
 }
   /* footer styles */
