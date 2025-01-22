@@ -353,7 +353,17 @@ background-color: #95B226;
   background-color: #5D58F0;
 }
   /* footer styles */
-
+.footer{
+  background-color: #01ACFD;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: ;:40px 80px 40px 80px ;
+}
+.footer-img{
+  height: auto;
+  width: 400px;
+}
 
 .marquee-container{
   width: 100%;
