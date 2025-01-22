@@ -247,22 +247,22 @@
     width: 100%;
     gap: 10px;
    }
+
   /* Our Stories styles */
-   /* .stories-images{
-    display: flex;
-    justify-content: center;
-   }
-
-.story-pictures{
-  display: flex;
-  justify-content: space-between;
-} */
-
+.our-story{
+  /* display: flex;
+  justify-content: space-between; */
+  margin: 200px 140px 80px 140px;
+}
 .stories{
   width: 100%;
   margin: 0 auto;
   padding: 2px;
- background: linear-gradient(to top, #FEA301, #FEC257, #FFFFFF);
+  gap: 20px;
+ background: linear-gradient(to top, rgba(255, 229, 184, 1), rgba(255, 255, 255, 1) ),  
+ url(../assets/bg.png);
+ background-size: cover;
+ background-position: center;
 }
 
 .story-title{
@@ -273,11 +273,23 @@
 }
 .story-pictures{
   display: grid;
-  grid-template-columns: 2fr 2fr;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+}
+
+.story-pic{
+  border: 1px solid rgb(250, 249, 249);
+  border-radius: 10px;
+ background-color: white;
+ padding: 5px;
+ text-align: center;
+ 
 }
 .stories-images{
   display: grid;
   grid-template-columns: 2fr 1fr;
+  width:540px;
+  height: 630px;
 }
 
 .story-img{
@@ -285,17 +297,87 @@
   border-radius:16px ;
   padding: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-right: 20px;
+ background-color: white;
+ height: auto;
 }
 
+.story-text{
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+}
 .main-img{
-  width:auto;
-  height: auto;
+ margin-left: 0px;
   border-radius: 10px;
+}
+
+.view-btn{
+  text-align: center;
+  color: white;
+  background-color: black;
+  width: 200px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 80px 620px 60px 620px;
+  border-radius: 12px;
+  font-size: 20px;
+  font-weight: bold;
+}
+ .img-container{
+  width: 100%;
+ }
+
+.story-btn{
+  display:;
+  /* margin: -314px 327px 33px 38px; */
+  border: none;
+  padding: 8px 15px;
+  border-radius: 48px;
+  cursor: pointer;
+  width: 200px;
+  height: 40px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.color-6{
+  background-color: #3CD8E8;
+}
+.color-7{
+background-color: #95B226;
+}
+.color-8{
+  background-color: #5D58F0;
 }
   /* footer styles */
 
 
+.marquee-container{
+  width: 100%;
+  overflow: hidden;
+  background-color: rgb(204, 180, 180);
+  padding: 10px 0;
+}
+.marquee-text{
+  display: inline-block;
+  white-space: nowrap;
+  animation: marquee 15s linear infinite;
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+}
 
+@keyframes marquee {
+  from{
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
   /*mobile responsive  */
  @media screen and (max-width:576px) {
      .menu, .nav-title, .nav-btn{
